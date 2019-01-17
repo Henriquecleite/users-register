@@ -1,0 +1,203 @@
+.List {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ffffff));
+  background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.List .Container {
+  -ms-flex-preferred-size: 340px;
+      flex-basis: 340px;
+  margin: 70px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.List .Container .ListHeader {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.List .Container .ListHeader .Title {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #4a4a4a;
+}
+
+.List .Container .ListHeader .AddButton {
+  background-color: #12c1c7;
+  color: #ffffff;
+  -ms-flex-preferred-size: 130px;
+      flex-basis: 130px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto 0 2px 0;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 600;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 2px #0e9a9f;
+          box-shadow: 0 2px #0e9a9f;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.List .Container .ListHeader .AddButton:hover {
+  background-color: #0e9a9f;
+}
+
+.List .Container .ListContent {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+.List .Container .ListContent .ContentTitles {
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.List .Container .ListContent .ContentTitles .FullName, .List .Container .ListContent .ContentTitles .CreatedAt {
+  color: #12c1c7;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span, .List .Container .ListContent .ContentTitles .CreatedAt span {
+  padding-right: 5px;
+  height: 20px;
+  float: right;
+  color: #9b9b9b;
+  font-size: 8px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span .TopTriangle, .List .Container .ListContent .ContentTitles .CreatedAt span .TopTriangle {
+  -ms-flex-preferred-size: 10px;
+      flex-basis: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span .TopTriangle div, .List .Container .ListContent .ContentTitles .CreatedAt span .TopTriangle div {
+  height: 8px;
+  line-height: 8px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span .BottomTriangle, .List .Container .ListContent .ContentTitles .CreatedAt span .BottomTriangle {
+  -ms-flex-preferred-size: 10px;
+      flex-basis: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span .BottomTriangle div, .List .Container .ListContent .ContentTitles .CreatedAt span .BottomTriangle div {
+  height: 8px;
+  line-height: 8px;
+}
+
+.List .Container .ListContent .ContentTitles .FullName span:hover, .List .Container .ListContent .ContentTitles .CreatedAt span:hover {
+  color: #636363;
+}
+
+.List .Container .ListContent .ContentTitles .FullName {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+.List .Container .ListContent .ContentTitles .CreatedAt {
+  -ms-flex-preferred-size: 105px;
+      flex-basis: 105px;
+}
+
+.List .Container .ListContent .UsersContainer .User {
+  height: 40px;
+  padding: 5px 0;
+  border-bottom: 1px solid #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 40px;
+}
+
+.List .Container .ListContent .UsersContainer .User .UserPic {
+  background-color: #d8d8d8;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #596161;
+}
+
+.List .Container .ListContent .UsersContainer .User .UserName {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.List .Container .ListContent .UsersContainer .User .UserDate {
+  -ms-flex-preferred-size: 142px;
+      flex-basis: 142px;
+  margin-right: 5px;
+  font-size: 15px;
+  color: #4a4a4a;
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .List .Container {
+    -ms-flex-preferred-size: 620px;
+        flex-basis: 620px;
+  }
+}

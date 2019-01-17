@@ -1,0 +1,14 @@
+.Header {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Header .Title {
+  margin: auto;
+  color: #12c1c7;
+  font-size: 45px;
+  font-weight: bold;
+}

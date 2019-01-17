@@ -1,0 +1,152 @@
+.Register {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ffffff));
+  background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Register .Container {
+  -ms-flex-preferred-size: 340px;
+      flex-basis: 340px;
+  height: 550px;
+  margin: 70px auto 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Register .Container .RegisterHeader {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Register .Container .RegisterHeader .Title {
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #4a4a4a;
+}
+
+.Register .Container .RegisterHeader .Steps {
+  color: #ffffff;
+  -ms-flex-preferred-size: 70px;
+      flex-basis: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 25px 0 auto;
+  text-align: center;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.Register .Container .RegisterHeader .Steps .Step1 {
+  background-color: #b8e986;
+  -ms-flex-preferred-size: 30px;
+      flex-basis: 30px;
+  height: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+  line-height: 30px;
+  color: #4a4a4a;
+}
+
+.Register .Container .RegisterHeader .Steps .StepsLink {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50%;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.Register .Container .RegisterHeader .Steps .Step2 {
+  background-color: #e7e7e7;
+  -ms-flex-preferred-size: 25px;
+      flex-basis: 25px;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+  line-height: 25px;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+.Register .Container .RegisterContent {
+  margin-top: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "fn ln" "cn cn" "em em" "pw rpw";
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  -ms-grid-rows: 95px 95px 95px 95px;
+      grid-template-rows: 95px 95px 95px 95px;
+}
+
+.Register .Container .RegisterContent .NextStepButtonDisabled, .Register .Container .RegisterContent .NextStepButtonEnabled {
+  height: 40px;
+  width: 130px;
+  margin-top: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5%;
+}
+
+.Register .Container .RegisterContent .NextStepButtonDisabled span, .Register .Container .RegisterContent .NextStepButtonEnabled span {
+  margin-left: 2px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.Register .Container .RegisterContent .NextStepButtonDisabled {
+  background-color: #e7e7e7;
+  cursor: not-allowed;
+}
+
+.Register .Container .RegisterContent .NextStepButtonEnabled {
+  background-color: #30cf94;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Register .Container .RegisterContent .NextStepButtonEnabled:hover {
+  background-color: #2ab17f;
+}
+
+@media (min-width: 768px) {
+  .Register .Container {
+    -ms-flex-preferred-size: 420px;
+        flex-basis: 420px;
+  }
+}

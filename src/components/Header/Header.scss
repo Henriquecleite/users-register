@@ -1,0 +1,11 @@
+.Header {
+    flex-basis: 100px;
+    display: flex;
+    
+    .Title {
+        margin: auto;
+        color: #12c1c7;
+        font-size: 45px;
+        font-weight: bold;
+    }
+}

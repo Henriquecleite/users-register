@@ -1,0 +1,118 @@
+.Register {
+    background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+    flex: 1;
+    display: flex;
+
+    .Container {
+        flex-basis: 340px;
+        height: 550px;
+        margin: 70px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+
+        .RegisterHeader {
+            flex-basis: 50px;
+            display: flex;
+            justify-content: space-between; 
+
+            .Title {
+                flex-basis: 100px;
+                font-size: 45px;
+                font-weight: 300;
+                line-height: 50px;
+                color: #4a4a4a;
+            }
+
+            .Steps {
+                color: #ffffff;
+                flex-basis: 70px;
+                display: flex;
+                box-sizing: border-box;
+                margin: 0 25px 0 auto;
+                text-align: center;
+                font-weight: 600;
+                user-select: none;
+                
+                .Step1 {
+                    background-color: #b8e986;
+                    flex-basis: 30px;
+                    height: 30px;
+                    align-self: center;
+                    border-radius: 50%;
+                    line-height: 30px;
+                    color: #4a4a4a;
+                }
+                
+                .StepsLink {
+                    flex: 1;
+                    height: 50%;
+                    border-bottom:1px solid #e7e7e7; 
+                }
+                
+                .Step2 {
+                    background-color: #e7e7e7;
+                    flex-basis: 25px;
+                    height: 25px;
+                    align-self: center;
+                    border-radius: 50%;
+                    line-height: 25px;
+                    color: rgb(161, 161, 161);
+                    font-size: 12px;
+                }
+            }   
+        }
+
+        .RegisterContent {
+            margin-top: 40px;            
+            flex: 1;
+            display: grid;
+            grid-template-areas: "fn ln" "cn cn" "em em" "pw rpw";
+            grid-template-columns: 50% auto;
+            $row-height: 95px;
+            grid-template-rows: $row-height $row-height $row-height $row-height;     
+            
+            %next-step-button {
+                height: 40px;
+                width: 130px;
+                margin-top: 25px;
+                line-height: 40px;
+                text-align: center;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 700;
+                border-radius: 5%;
+
+                span {
+                    margin-left: 2px;
+                    line-height: 40px;
+                    font-size: 20px;
+                }
+            }
+            
+            .NextStepButtonDisabled {               
+                @extend %next-step-button;                
+                background-color: #e7e7e7;
+                cursor: not-allowed;
+            }
+
+            .NextStepButtonEnabled {               
+                @extend %next-step-button;
+                background-color: #30cf94;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #2ab17f; 
+                }
+            }
+        }   
+    }
+}
+
+@media (min-width: 768px) {
+    .Register {
+        .Container {
+            flex-basis: 420px;
+        }   
+    }    
+}

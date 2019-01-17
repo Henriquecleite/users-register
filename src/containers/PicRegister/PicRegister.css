@@ -1,0 +1,142 @@
+.PicRegister {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#ffffff));
+  background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.PicRegister .Container {
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  height: 400px;
+  margin: 70px auto 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.PicRegister .Container .PicRegisterHeader {
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+}
+
+.PicRegister .Container .PicRegisterHeader .Title {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 50px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.PicRegister .Container .PicRegisterContent {
+  margin-top: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.PicRegister .Container .PicRegisterContent .PictureNo, .PicRegister .Container .PicRegisterContent .PictureYes {
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  width: 150px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.PicRegister .Container .PicRegisterContent .PictureNo input, .PicRegister .Container .PicRegisterContent .PictureYes input {
+  position: absolute;
+  left: -999em;
+}
+
+.PicRegister .Container .PicRegisterContent .PictureNo .PictureLabel, .PicRegister .Container .PicRegisterContent .PictureYes .PictureLabel {
+  width: 120px;
+  padding: 5px;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #adadad;
+  border-radius: 5px;
+}
+
+.PicRegister .Container .PicRegisterContent .PictureNo {
+  background-color: #adadad;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons {
+  margin-top: 40px;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .BackButton, .PicRegister .Container .PicRegisterContent .Buttons .FinishButton {
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .BackButton span, .PicRegister .Container .PicRegisterContent .Buttons .FinishButton span {
+  margin-left: 2px;
+  line-height: 40px;
+  font-size: 13px;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .BackButton {
+  color: #4a4a4a;
+  font-weight: 400;
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .BackButton:hover {
+  color: #000000;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .FinishButton {
+  background-color: #30cf94;
+  color: #ffffff;
+  font-weight: 600;
+  -ms-flex-preferred-size: 130px;
+      flex-basis: 130px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .FinishButton:hover {
+  background-color: #2ab17f;
+}
+
+.PicRegister .Container .PicRegisterContent .Buttons .RightSpace {
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+}

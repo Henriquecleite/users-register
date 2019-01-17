@@ -1,0 +1,116 @@
+.PicRegister {
+    background: linear-gradient(to bottom, #f3f3f3, #ffffff);
+    flex: 1;
+    display: flex;
+
+    .Container {
+        flex-basis: 300px;
+        height: 400px;
+        margin: 70px auto 20px auto;
+        display: flex;
+        flex-direction: column;
+
+        .PicRegisterHeader {
+            flex-basis: 50px;
+
+            .Title {
+                font-size: 45px;
+                font-weight: 300;
+                line-height: 50px;
+                color: #4a4a4a;
+                text-align: center;
+            }                
+        }
+
+        .PicRegisterContent {
+            margin-top: 40px;            
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            
+            %picture {
+                flex-basis: 150px;
+                width: 150px;
+                align-self: center;
+                border-radius: 50%;
+                display: flex;
+                cursor: pointer;
+
+                input {
+                    position: absolute;
+                    left: -999em;
+                }
+                
+                .PictureLabel {
+                    width: 120px;
+                    padding: 5px;
+                    margin: auto;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: center;
+                    background-color: #adadad;
+                    border-radius: 5px;
+                }
+            }
+
+            .PictureNo {
+                @extend %picture;
+                background-color: #adadad;               
+            }
+
+            .PictureYes {
+                @extend %picture;
+            }
+
+            .Buttons {
+                margin-top: 40px;            
+                flex-basis: 40px;
+                display: flex;
+                justify-content: space-between;
+
+                %buttons {
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 15px;
+                    border-radius: 5%;
+                    cursor: pointer;
+    
+                    span {
+                        margin-left: 2px;
+                        line-height: 40px;
+                        font-size: 13px;
+                    }
+                }
+                
+                .BackButton {
+                    @extend %buttons;
+                    color: #4a4a4a;
+                    font-weight: 400;
+                    flex-basis: 60px;    
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #000000; 
+                    }                
+                }
+                
+                .FinishButton {
+                    @extend %buttons;
+                    background-color: #30cf94;
+                    color: #ffffff;
+                    font-weight: 600;
+                    flex-basis: 130px;      
+                    transition: 0.3s;
+
+                    &:hover {
+                        background-color: #2ab17f; 
+                    }              
+                }
+                
+                .RightSpace {
+                    flex-basis: 60px;
+                }
+            }
+        }   
+    }
+}
