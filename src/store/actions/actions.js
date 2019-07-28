@@ -19,7 +19,7 @@ export const inputChanged = (field, event) => {
 export const inputBlurred = (field, event) => {
     return {
         type: actionTypes.INPUT_BLURRED,
-        field: field,
+        field: field,   
         event: event
     }
 };
